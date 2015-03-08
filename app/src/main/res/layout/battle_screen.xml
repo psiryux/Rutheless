@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/areaname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:typeface="serif"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TableLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <TableRow
+            android:id="@+id/toprow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <TableLayout
+                android:id="@+id/topleft"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                >
+                <TableRow
+                    android:id="@+id/playerpic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85">
+                    </TableRow>
+                <TableRow
+                    android:id="@+id/playerinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15">
+                    <TextView
+                        android:id="@+id/playerhp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:typeface="serif"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/playermp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:typeface="serif"
+                        android:gravity="center"/>
+                    </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/topright"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <TableRow
+                    android:id="@+id/enemypic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+                </TableRow>
+                <TableRow
+                    android:id="@+id/enemyinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3">
+                    <ScrollView
+                        android:id="@+id/battleinfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+                        </ScrollView>
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6">
+
+        <TableRow
+            android:id="@+id/bottomrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <TableLayout
+                android:id="@+id/bottomleft"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/left1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:typeface="serif"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/left2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:typeface="serif"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/left3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:typeface="serif"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/left4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:typeface="serif"
+                    android:gravity="center"/>
+
+            </TableLayout>
+
+            <ScrollView
+                android:id="@+id/bottomright"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <TableLayout
+                    android:id="@+id/scrolltable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                </TableLayout>
+
+            </ScrollView>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

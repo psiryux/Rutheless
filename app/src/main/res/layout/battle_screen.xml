@@ -64,25 +64,31 @@
             <TableLayout
                 android:id="@+id/topright"
                 android:layout_width="fill_parent"
-                android:layout_height="match_parent"
+                android:layout_height="fill_parent"
                 android:layout_weight="0.5">
                 <TableRow
                     android:id="@+id/enemypic"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.7">
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.3">
                 </TableRow>
                 <TableRow
                     android:id="@+id/enemyinfo"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.3">
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.7">
                     <ScrollView
                         android:id="@+id/battleinfo"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.5">
-                        </ScrollView>
+                        android:layout_height="fill_parent"
+                        android:fillViewport="true">
+                        <LinearLayout
+                            android:id="@+id/battleinfolist"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        </LinearLayout>
+                    </ScrollView>
                 </TableRow>
             </TableLayout>
 
@@ -106,34 +112,38 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.5">
 
-                <TextView
+                <Button
                     android:id="@+id/left1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
                     android:typeface="serif"
-                    android:gravity="center"/>
-                <TextView
+                    android:gravity="center"
+                    android:background="#00ffffff"/>
+                <Button
                     android:id="@+id/left2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
                     android:typeface="serif"
-                    android:gravity="center"/>
-                <TextView
+                    android:gravity="center"
+                    android:background="#00ffffff"/>
+                <Button
                     android:id="@+id/left3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
                     android:typeface="serif"
-                    android:gravity="center"/>
-                <TextView
+                    android:gravity="center"
+                    android:background="#00ffffff"/>
+                <Button
                     android:id="@+id/left4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
                     android:typeface="serif"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:background="#00ffffff"/>
 
             </TableLayout>
 

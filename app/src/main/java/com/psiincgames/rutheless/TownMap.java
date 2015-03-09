@@ -12,21 +12,30 @@ public class TownMap extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.town_map);
 
+        findViewById(R.id.townpic).setBackgroundResource(R.drawable.stockmap);
 
-        Button button1 = (Button) findViewById(R.id.button);
+        Button button1 = (Button) findViewById(R.id.left1);
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(TownMap.this, TitleMenu.class);
+                Intent intent = new Intent(TownMap.this, BattleScreen.class);
                 startActivity(intent);
             }
         });
-        Button button2 = (Button) findViewById(R.id.buttonexit);
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                System.exit(0);
-            }
-        });
+        button1.setText("Battle!");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }
